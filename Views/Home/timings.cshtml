@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Old Blog Template - Free CSS Layout</title>
+<meta name="keywords" content="free css layout, old blog template, CSS, HTML" />
+<meta name="description" content="Old Blog Template - free website template provided by TemplateMo.com" />
+<link href="~/content/templatemo_style.css" rel="stylesheet" type="text/css" />
+<!--  Designed by w w w . t e m p l a t e m o . c o m  -->
+<link rel="stylesheet" type="text/css" href="~/content/tabcontent.css" />
+<script type="text/javascript" src="~/Script/tabcontent.js">
+/***********************************************
+* Tab Content script v2.2- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+</script>
+</head>
+<body>
+
+	<div id="templatemo_header_panel">
+    	<div id="templatemo_title_section">
+				<h1>PUCIT Hostels</h1>
+
+	    </div>
+    </div> 
+    
+    <div id="templatemo_menu_panel">
+    	<div id="templatemo_menu_section">
+            <ul>
+                 <li>@Html.ActionLink("Home" , "Index" , "Home")</li>
+                <li>@Html.ActionLink("Apply" , "register" , "Home")<li>
+@*                <li>@Html.ActionLink("Student" , "studentLogin" , "Home")</li>*@
+                <li>@Html.ActionLink("Admin" , "adminLogin" , "Home")</li>
+                <li>@Html.ActionLink("About" , "about" , "Home")</li>   
+                <li>@Html.ActionLink("Contact" , "contact" , "Home")</li>                   
+            </ul> 
+		</div>
+    </div> <!-- end of menu -->
+    
+	<div id="templatemo_content_container">
+        <div id="templatemo_content">
+            <div id="templatemo_content_left">
+				
+                <div class="templatemo_post_wrapper">
+                <div class="templatemo_post">
+                    <div class="post_title">
+                    	Mess Timings</div>
+                    <div class="post_info">
+                        <p><font color="red">NOTE : </font>Breakfast from 06:00 AM to 09:00 AM, Lunch from 12:00 PM to 02:00 PM & Dinner at 08:00 PM to 10:00 PM.</p>                 
+
+                    </div>
+                    <div class="post_body">
+                        <img src="~/images/real-food.jpg" alt="free css template" border="1" height="400" width="560" />
+                  </div>
+              <div class="post_comment">
+                    	<a href="#">No Comment</a>
+                    </div>
+                </div>
+                </div> <!-- End of a post-->
+                
+                <div class="templatemo_post_wrapper">
+                <div class="templatemo_post">
+                    <div class="post_title">
+                    Open Close Timings</div>
+                    <div class="post_info">
+                       <font color="red">NOTE : </font>Opened at 04:00 AM & Closed after 10:00 PM. 
+                    </div>
+                    <div class="post_body">
+                        <img src="~/images/door-closed.jpg" alt="free blog template" border="1" height="400" width="560"/>
+                                  
+                    </div>
+              <div class="post_comment">
+                    	<a href="#">More Pictures</a>
+                    </div>
+                </div>
+                </div>  <!-- End of a post-->
+                
+            </div> <!-- end of content left -->
+        
+            <div id="templatemo_content_right">
+            
+            	<div class="templatemo_right_section">
+					<!--<div class="tag_section">
+                        <ul id="countrytabs" class="shadetabs">
+                            <li><a href="#" rel="search" class="selected">Search</a></li>                
+                            <li><a href="#" rel="category">Category</a></li>
+                            <li><a href="#" rel="archive">Archive</a></li>
+                        </ul>
+					</div>-->
+				
+                    <div class="tabcontent_section">
+                        <div id="search" class="tabcontent">
+                            <form method="get" action="#">
+                                <input class="inputfield" name="searchkeyword" type="text" id="searchkeyword"/>
+                                <input type="submit" name="submit" class="button" value="Search" />
+                            </form>                    
+                        </div>
+					
+                        <div id="category" class="tabcontent">
+                            <ul>
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Duis mollis</a></li>
+                                <li><a href="#">Maecenas adipiscing</a></li>
+                                <li><a href="#">Nunc blandit orci</a></li>
+                                <li><a href="#">Cum sociis natoque</a></li>
+                            </ul>                        
+                        </div>
+		            
+                        <div id="archive" class="tabcontent">
+                            <ul>
+                                <li><a href="#">January 2049</a></li>
+                                <li><a href="#">December 2048</a></li>
+                                <li><a href="#">November 2048</a></li>
+                                <li><a href="#">October 2048</a></li>
+                                <li><a href="#">September 2048</a></li>
+                            </ul>                         
+                        </div>
+					</div>
+
+					<script type="text/javascript">
+
+					    var countries = new ddtabcontent("countrytabs")
+					    countries.setpersist(true)
+					    countries.setselectedClassTarget("link") //"link" or "linkparent"
+					    countries.init()
+
+                    </script> <!--- end of tag -->
+                </div>
+            	
+                
+                <div class="templatemo_right_section">
+                	<h2>Popular Posts</h2>
+					<ul>
+                        <li>@Html.ActionLink("Register yourself for hostel" , "register" , "Home")</li> 
+                        <!--<li><a href="register.cshtml">Register yourself for hostel</a></li>-->
+@*                        <li>@Html.ActionLink("Wanna Leave Hostel" , "deleteStudent" , "Home")</li> *@
+                        @*<li><a href="#">Wanna Leave Hostel</a></li>*@
+@*                        <li>@Html.ActionLink("Upate Your Information" , "update" , "Home")</li> *@
+
+                        <li>@Html.ActionLink("Hostel Facilities" , "facilities" , "Home")</li>
+                        <li>@Html.ActionLink("Hostel Timings" , "timings" , "Home")</li>
+                    </ul>    
+                </div>
+                
+                <div class="templatemo_right_section">
+                	<h2>About Hostel</h2>
+					<ul>
+                        <li>Inaugurated on 12 Feb 2001</li>
+                        <li>Inaugurated By CM Punjab</li>
+                        <li>Construction started in June 1998</li>
+                        <li>Total rooms available 120</li>
+                        <li>Gas and Electricity provided</li>
+                    </ul>  
+                </div>
+                
+                <div class="templatemo_right_section">
+	                <h2>Recent Comments</h2>
+                	<ul>	
+                        <li>Alee Raza on Hostel Schedule</li>
+                        <li>Amina on Increase Facilities</li>
+                        <li>Zahid Ali on Mess Timings</li>
+                        <li>Asim Hanif on Hostel Security</li>
+                      <li>Moheeb Rana on Maintenence</li>
+                  </ul>
+                </div>
+                
+                <div class="templatemo_right_section">
+                	<h2>Search</h2>
+					<form method="get" action="#">
+                        <input class="inputfield" name="keyword" type="text" id="keyword"/>
+                        <input type="submit" name="submit" class="button" value="Search" />
+                    </form>
+                </div>
+                
+            </div> <!-- end of right content -->
+	    </div> <!-- end of content -->
+    </div> <!-- end of content container -->
+
+	<div id="templatemo_bottom_panel">
+    	<div id="templatemo_bottom_section">
+            <div class="templatemo_bottom_section_content">
+                <h3>Partner Links</h3>
+                <ul>
+                    <li><a href="http://www.pulc.edu.pk/">LAW Department PU</a></li>
+                    <li><a href="http://pu.edu.pk/home/department/44/Institute-of-Chemistry">Chemistry Department</a></li>
+                    <li><a href="http://pu.edu.pk/program/show/6501/Centre-for-Geographic-Information-System-GIS">GIS Centre</a></li>
+                    <li><a href="http://puhcbf.pu.edu.pk/">Hailey College</a></li>
+                    <li><a href="http://pu.edu.pk/home/department/2/University-College-of-Arts---Design">Arts & Design</a></li>
+                </ul>
+            </div>
+            
+            <div class="templatemo_bottom_section_content">
+                <h3>Other Links</h3>
+                 <ul>
+      <li><a href="/Home/facilities/">Facilities</a></li>
+                    <li><a href="/Home/contact/">Contact</a></li>
+                    <li><a href="http://www.pu.edu.pk/">PU Official Site</a></li>                 
+                    <li><a href="http://www.pucit.edu.pk/">PUCIT Official Site</a></li>
+                </ul>
+            </div>
+            
+            <div class="templatemo_bottom_section_content">
+                <h3>About this blog</h3>
+                <p>Hostels are generally cheaper for both the operator and the occupants, many hostels have long-term residents whom they employ as desk clerks or housekeeping staff in exchange for free accommodation.</p>
+          </div>
+            
+        </div>
+    </div> <!-- end of templatemo bottom panel -->
+</body>
+</html>
+

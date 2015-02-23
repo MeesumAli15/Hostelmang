@@ -1,0 +1,180 @@
+﻿@model practice.Models.StdRecord
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+       @******************for form*****************@
+
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!---------- CSS ------------>
+ <link rel="stylesheet" type="text/css" href="~/content/style1.css"/>
+
+    @******************for form***********@
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Old Blog Template - Free CSS Layout</title>
+<meta name="keywords" content="free css layout, old blog template, CSS, HTML" />
+<meta name="description" content="Old Blog Template - free website template provided by TemplateMo.com" />
+<link href="~/content/templatemo_style.css" rel="stylesheet" type="text/css" />
+<!--  Designed by w w w . t e m p l a t e m o . c o m  -->
+<link rel="stylesheet" type="text/css" href="~/content/tabcontent.css" />
+<script type="text/javascript" src="~/Script/tabcontent.js">
+/***********************************************
+* Tab Content script v2.2- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+</script>
+</head>
+<body>
+
+	<div id="templatemo_header_panel">
+    	<div id="templatemo_title_section">
+				@*<h1>PUCIT Hostels</h1>*@
+
+	    </div>
+    </div> 
+    
+    <div id="templatemo_menu_panel">
+    	<div id="templatemo_menu_section">
+            <ul>
+                 <li>@Html.ActionLink("Home" , "Index" , "Home")</li>
+               @* <li>@Html.ActionLink("Student" , "studentLogin" , "Home")</li>*@
+                <li>@Html.ActionLink("Admin" , "adminLogin" , "Home")</li>
+                <li>@Html.ActionLink("About" , "about" , "Home")</li>
+                <li>@Html.ActionLink("Contact" , "contact" , "Home")</li>                    
+            </ul> 
+		</div>
+    </div> <!-- end of menu -->
+    
+	<div id="templatemo_content_container">
+        <div id="templatemo_content">
+            <div id="templatemo_content_left">
+				
+                <div class="templatemo_post_wrapper">
+                <div class="templatemo_post">
+                    <div class="post_title">
+                    	</div>
+
+                   @* ********************************************************@
+
+                    
+
+<!--BEGIN #signup-form -->
+    <div id="signup-form">
+        
+        <!--BEGIN #subscribe-inner -->
+        <div id="signup-inner">
+        
+        	<div class="clearfix" id="header">
+        	
+        		<img id="signup-icon" src="~/images/signup.png" alt="" />
+        
+                <h1>Update !</h1>
+
+            
+            </div>
+			<p>Update your informations carefully.</p>
+
+            
+            <form id="send" action="/Home/updateConfirm/@Model.Id" method="post">
+            	
+                <p>
+
+                <label for="name">Your Name *</label>
+                <input id="name" type="text" name="name" value="@Model.Name" />
+                </p>
+                
+                <p>
+                <label for="company">Father Name *</label>
+                <input id="father" type="text" name="father" value="@Model.FName" />
+                </p>
+                
+               @* <p>
+
+                <label for="email">Roll Number *</label>
+                <input id="rollNumber" type="text" name="rollNumber" value="" />
+                </p>*@
+                
+               @*  <p>
+
+                <label for="email">Session *</label>
+                <input id="session" type="text" name="session" value="" />
+                </p>*@
+
+                <p>
+                <label for="phone">Phone *</label>
+                <input id="phone" type="text" name="phone" value="@Model.Phone" />
+                </p>
+                
+              @*  <p>
+                <label for="country">CNIC *</label>
+                <input id="Country" type="text" name="cnic" value="" />
+                </p>*@
+
+                <p>
+                <label for="website">Email </label>
+                <input id="email" type="text" name="email" value="@Model.Email" />
+                </p>
+                
+                <p>
+
+                <button id="submit" type="submit">Update</button>
+                </p>
+                
+            </form>
+            
+		<div id="required">
+		<p>* Required Fields</p>
+		</div>
+
+
+            </div>
+        
+        <!--END #signup-inner -->
+        </div>
+        
+    <!--END #signup-form -->   
+    
+
+                    @*********************************************************@
+                </div>
+                </div>
+                </div> <!-- End of a post-->
+                </div>
+                </div>
+              
+
+	<div id="templatemo_bottom_panel">
+    	<div id="templatemo_bottom_section">
+            <div class="templatemo_bottom_section_content">
+                <h3>Partner Links</h3>
+                <ul>
+                    <li><a href="http://www.pulc.edu.pk/">LAW Department PU</a></li>
+                    <li><a href="http://pu.edu.pk/home/department/44/Institute-of-Chemistry">Chemistry Department</a></li>
+                    <li><a href="http://pu.edu.pk/program/show/6501/Centre-for-Geographic-Information-System-GIS">GIS Centre</a></li>
+                    <li><a href="http://puhcbf.pu.edu.pk/">Hailey College</a></li>
+                    <li><a href="http://pu.edu.pk/home/department/2/University-College-of-Arts---Design">Arts & Design</a></li>
+                </ul>
+            </div>
+            
+            <div class="templatemo_bottom_section_content">
+                <h3>Other Links</h3>
+                 <ul>
+                   <li><a href="/Home/facilities/">Facilities</a></li>
+                    <li><a href="/Home/contact/">Contact</a></li>
+                    <li><a href="http://www.pu.edu.pk/">PU Official Site</a></li>                 
+                    <li><a href="http://www.pucit.edu.pk/">PUCIT Official Site</a></li>
+                </ul>
+            </div>
+            
+            <div class="templatemo_bottom_section_content">
+                <h3>About this blog</h3>
+                <p>Hostels are generally cheaper for both the operator and the occupants, many hostels have long-term residents whom they employ as desk clerks or housekeeping staff in exchange for free accommodation.</p>
+          </div>
+            
+        </div>
+    </div> <!-- end of templatemo bottom panel -->
+</body>
+</html>
